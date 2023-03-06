@@ -67,7 +67,7 @@ public class Main {
         ArrayList<Integer> num_randoms = numRandoms(num_intervalos, intervalos);
         ArrayList<Integer> result = seq_fibonacci(num_randoms.get(0));
 
-        System.out.println("Random= "+ num_randoms);
+        System.out.println("Numeros random dos intervalos: "+ num_randoms);
         result.addAll(num_randoms.subList(1, num_randoms.size()));
         for (int num : num_randoms) {
             ArrayList<Integer> fib_seq = seq_fibonacci(num);
